@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <p id="q">q3</p>
+    <p id="lang">lang</p>
     <script>
         const params = new Proxy(new URLSearchParams(window.location.search), {
             get: (searchParams, prop) => searchParams.get(prop),
         });
-        document.getElementById("q").value = params.q;
+        document.getElementById("lang").value = params.lang;
     </script>
 </body>
 
