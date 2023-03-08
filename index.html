@@ -9,7 +9,12 @@
 </head>
 
 <body>
-    index2
+    <p id="q">q</p>
+    <script>
+        const params = new URLSearchParams(window.location.q);
+        const q = params.get("q");
+        document.getElementbyid("q").value = q;
+    </script>
 </body>
 
 </html>
